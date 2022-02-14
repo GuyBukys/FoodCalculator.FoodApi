@@ -1,5 +1,5 @@
 ﻿namespace FoodCalculator.FoodApi.DomainModel;
-public class Class1
-{
 
+public interface INutritionRetriever
+{
 }
