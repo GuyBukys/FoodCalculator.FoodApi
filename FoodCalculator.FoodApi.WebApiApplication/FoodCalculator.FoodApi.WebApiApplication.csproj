@@ -15,6 +15,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FoodCalculator.FoodApi.ApiModel\FoodCalculator.FoodApi.ApiModel.csproj" />
+    <ProjectReference Include="..\FoodCalculator.FoodApi.Options\FoodCalculator.FoodApi.Options.csproj" />
+    <ProjectReference Include="..\FoodCalculator.FoodApi.RepositoryModel\FoodCalculator.FoodApi.RepositoryModel.csproj" />
   </ItemGroup>
 
 </Project>
