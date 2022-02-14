@@ -18,7 +18,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "api/{controller}/{action}/{id?}",
+        defaults: new { action = "Get" });
+});
 
 app.MapControllers();
 
