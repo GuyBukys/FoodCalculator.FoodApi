@@ -1,5 +1,4 @@
 ﻿using FoodCalculator.FoodApi.Options;
-using FoodCalculator.FoodApi.RepositoryModel.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -21,16 +20,16 @@ public class NutritionRepository : INutritionRepository
         _edamamOptions = edamamOptions;
     }
 
-    public async Task<NutritionDataOutputModel> GetNutritionData(string food)
+    public async Task<NutritionDataResponse> GetNutritionData(string ingredientQueryString)
     {
         try
         {
-            _logger.LogInformation($"Started getting nutrition data for food: '{food}'");
+            _logger.LogInformation($"Started getting nutrition data for ingredient query: '{ingredientQueryString}'");
 
             string requestUri = $"nutrition-data" +
                 $"?app_id={_edamamOptions.CurrentValue.ApiId}" +
                 $"&app_key={_edamamOptions.CurrentValue.ApiSecret}" +
-                $"&ingr={food}";
+                $"&ingr={ingredientQueryString}";
 
             HttpResponseMessage response = await _httpClient.GetAsync(
                 requestUri,
@@ -43,15 +42,15 @@ public class NutritionRepository : INutritionRepository
                 .ReadAsStringAsync()
                 .ConfigureAwait(false);
 
-            NutritionDataOutputModel output = JsonConvert.DeserializeObject<NutritionDataOutputModel>(responseContent)!;
+            NutritionDataResponse output = JsonConvert.DeserializeObject<NutritionDataResponse>(responseContent)!;
 
-            _logger.LogInformation($"Finished getting nutrition data for food: '{food}'");
+            _logger.LogInformation($"Finished getting nutrition data for query: '{ingredientQueryString}'");
 
             return output;
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, $"Finished getting nutrition data for food: '{food}'");
+            _logger.LogError(ex, $"Finished getting nutrition data for query: '{ingredientQueryString}'");
             throw;
         }
     }

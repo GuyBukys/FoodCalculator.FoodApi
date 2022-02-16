@@ -7,15 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.WebA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.ApiModel", "FoodCalculator.FoodApi.ApiModel\FoodCalculator.FoodApi.ApiModel.csproj", "{1635DA17-4972-4B0B-A448-52C601D28F19}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.DomainModel", "FoodCalculator.FoodApi.DomainModel\FoodCalculator.FoodApi.DomainModel.csproj", "{DA39A286-78EA-4032-AE2F-15DF823B662D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.RepositoryModel", "FoodCalculator.FoodApi.RepositoryModel\FoodCalculator.FoodApi.RepositoryModel.csproj", "{90CF7748-083A-4AA0-AD17-36099B41F8ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodCalculator.FoodApi.Options", "FoodCalculator.FoodApi.Options\FoodCalculator.FoodApi.Options.csproj", "{831178C5-54D2-48CB-B816-C07327A32BD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.Options", "FoodCalculator.FoodApi.Options\FoodCalculator.FoodApi.Options.csproj", "{831178C5-54D2-48CB-B816-C07327A32BD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodCalculator.FoodApi.EntityModel", "FoodCalculator.FoodApi.EntityModel\FoodCalculator.FoodApi.EntityModel.csproj", "{9E1CAA83-935A-42FA-B8A9-374EF726399C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.EntityModel", "FoodCalculator.FoodApi.EntityModel\FoodCalculator.FoodApi.EntityModel.csproj", "{9E1CAA83-935A-42FA-B8A9-374EF726399C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodCalculator.FoodApi.UnitTests", "FoodCalculator.FoodApi.UnitTests\FoodCalculator.FoodApi.UnitTests.csproj", "{530197A4-E190-4DF1-BD0D-5AC0050A6385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.UnitTests", "FoodCalculator.FoodApi.UnitTests\FoodCalculator.FoodApi.UnitTests.csproj", "{530197A4-E190-4DF1-BD0D-5AC0050A6385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodCalculator.FoodApi.DomainModel", "FoodCalculator.FoodApi.DomainModel\FoodCalculator.FoodApi.DomainModel.csproj", "{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		{1635DA17-4972-4B0B-A448-52C601D28F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1635DA17-4972-4B0B-A448-52C601D28F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1635DA17-4972-4B0B-A448-52C601D28F19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA39A286-78EA-4032-AE2F-15DF823B662D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA39A286-78EA-4032-AE2F-15DF823B662D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA39A286-78EA-4032-AE2F-15DF823B662D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA39A286-78EA-4032-AE2F-15DF823B662D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90CF7748-083A-4AA0-AD17-36099B41F8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90CF7748-083A-4AA0-AD17-36099B41F8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90CF7748-083A-4AA0-AD17-36099B41F8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{530197A4-E190-4DF1-BD0D-5AC0050A6385}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{530197A4-E190-4DF1-BD0D-5AC0050A6385}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{530197A4-E190-4DF1-BD0D-5AC0050A6385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
