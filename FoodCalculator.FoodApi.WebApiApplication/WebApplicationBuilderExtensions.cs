@@ -24,7 +24,8 @@ public static class ProgramExtensions
 
         services.AddHttpClient<INutritionRepository, NutritionRepository>(client =>
         {
-            client.BaseAddress = new Uri(configuration.GetSection(EdamamOptionsKey).GetValue<string>("EdemamApi"));
+            client.BaseAddress = new Uri(
+                configuration.GetValue<string>("EdamamOptions:EdamamApiUri"));
         });
 
         services.AddAutoMapper(cfg =>

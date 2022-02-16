@@ -14,7 +14,7 @@ public class RepositoryModelUnitTests
     public RepositoryModelUnitTests()
     {
         IConfiguration configuration = new ConfigurationBuilder()
-            .AddJsonFile("appsettings.test.json")
+            .AddJsonFile("appsettings.Testing.json")
             .Build();
 
         IServiceProvider serviceProvider = new ServiceCollection()
