@@ -8,7 +8,7 @@ public class NutritionDataResponse
 public abstract class NutrientBase
 {
     public string label { get; set; }
-    public int quantity { get; set; }
+    public double quantity { get; set; }
     public string unit { get; set; }
 }
 

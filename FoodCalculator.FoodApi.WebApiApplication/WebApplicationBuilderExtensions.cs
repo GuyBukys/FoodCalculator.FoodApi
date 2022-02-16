@@ -15,27 +15,30 @@ public static class ProgramExtensions
         // Add services to the container.
         const string EdamamOptionsKey = "EdamamOptions";
 
+        // register domain and repository instances
+        services
+            .AddScoped<INutritionRepository, NutritionRepository>()
+            .AddScoped<INutritionRetriever, NutritionRetriever>();
+
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
 
+        // register options
         services.Configure<EdamamOptions>(
             configuration.GetSection(EdamamOptionsKey));
 
+        // register Http clients
         services.AddHttpClient<INutritionRepository, NutritionRepository>(client =>
         {
-            client.BaseAddress = new Uri(
-                configuration.GetValue<string>("EdamamOptions:EdamamApiUri"));
+            client.BaseAddress = new Uri(configuration.GetValue<string>("EdamamOptions:EdamamApiUri"));
         });
 
+        // register mappings
         services.AddAutoMapper(cfg =>
         {
             cfg.AddProfile<ApiModelMappingProfile>();
         });
-
-        services
-            .AddScoped<INutritionRepository, NutritionRepository>()
-            .AddScoped<INutritionRetriever, NutritionRetriever>();
 
         return services;
     }
