@@ -29,10 +29,11 @@ public static class ProgramExtensions
             configuration.GetSection(EdamamOptionsKey));
 
         // register Http clients
-        services.AddHttpClient<INutritionRepository, NutritionRepository>(client =>
-        {
-            client.BaseAddress = new Uri(configuration.GetValue<string>("EdamamOptions:EdamamApiUri"));
-        });
+        services
+            .AddHttpClient<INutritionRepository, NutritionRepository>(client =>
+            {
+                client.BaseAddress = new Uri(configuration.GetValue<string>("EdamamOptions:EdamamApiUri"));
+            });
 
         // register mappings
         services.AddAutoMapper(cfg =>
