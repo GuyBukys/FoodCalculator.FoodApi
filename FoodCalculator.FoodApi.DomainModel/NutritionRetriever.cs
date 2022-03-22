@@ -72,7 +72,7 @@ public class NutritionRetriever : INutritionRetriever
             },
             new Carb
             {
-                Quantity = totalNutrients.ENERC_KCAL.quantity,
+                Quantity = totalNutrients.CHOCDF.quantity,
             },
             new Fat
             {

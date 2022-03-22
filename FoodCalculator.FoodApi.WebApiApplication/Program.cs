@@ -24,7 +24,7 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "api/{controller}/{action}/{id?}",
-        defaults: new { action = "Get" });
+        defaults: "/swagger");
 });
 
 app.MapControllers();

@@ -17,8 +17,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.Unit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodCalculator.FoodApi.DomainModel", "FoodCalculator.FoodApi.DomainModel\FoodCalculator.FoodApi.DomainModel.csproj", "{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodCalculator.FoodApi.WhatsappBot", "FoodCalculator.FoodApi.WhatsappBot\FoodCalculator.FoodApi.WhatsappBot.csproj", "{38098C67-29C3-4803-A5F4-958A23C4ADC1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,10 +51,6 @@ Global
 		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0B46C99-14E6-4C10-B4AD-571B8CA068F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{38098C67-29C3-4803-A5F4-958A23C4ADC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{38098C67-29C3-4803-A5F4-958A23C4ADC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{38098C67-29C3-4803-A5F4-958A23C4ADC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{38098C67-29C3-4803-A5F4-958A23C4ADC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

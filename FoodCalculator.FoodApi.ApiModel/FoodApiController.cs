@@ -2,11 +2,13 @@
 using FoodCalculator.FoodApi.DomainModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 
 namespace FoodCalculator.FoodApi.ApiModel;
 
 [ApiController]
 [CustomExceptionHandler]
+[Route("api/[controller]/[action]")]
 public class FoodApiController : ControllerBase
 {
     private readonly ILogger<FoodApiController> _logger;
@@ -24,7 +26,6 @@ public class FoodApiController : ControllerBase
     }
 
     [HttpPost]
-    [Route("GetNutritionData")]
     public async Task<IActionResult> GetNutritionData([FromBody] NutritionDataRequestModel request)
     {
         try
